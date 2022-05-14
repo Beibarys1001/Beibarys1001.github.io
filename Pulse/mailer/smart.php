@@ -11,14 +11,14 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'beibarysaldabergenov@gmail.com';                 // Наш логин
-$mail->Password = 'Pass1001Word';                           // Наш пароль от ящика
+$mail->Username = 'aldabergenov.beibarys.a@yandex.kz';                 // Наш логин
+$mail->Password = 'pfiwmxxqieiofrkd';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('beibarysaldabergenov@gmail.com', 'Pulse.Beibarys');   // От кого письмо 
+$mail->setFrom('aldabergenov.beibarys.a@yandex.kz', 'Pulse.Beibarys');   // От кого письмо 
 $mail->addAddress('gofac89452@cupbest.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
