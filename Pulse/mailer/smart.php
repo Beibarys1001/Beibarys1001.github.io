@@ -13,12 +13,12 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'aldabergenov.beibarys.a@yandex.kz';                 // Наш логин
-$mail->Password = 'pfiwmxxqieiofrkd';                           // Наш пароль от ящика
+$mail->Username = '';                 // Наш логин
+$mail->Password = '';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('aldabergenov.beibarys.a@yandex.kz', 'Pulse.Beibarys');   // От кого письмо 
+$mail->setFrom('', 'Pulse.Beibarys');   // От кого письмо 
 $mail->addAddress('gofac89452@cupbest.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
