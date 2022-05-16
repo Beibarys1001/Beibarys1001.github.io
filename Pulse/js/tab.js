@@ -44,9 +44,9 @@ $(document).ready(function(){
                     required: true,
                     minlength: 5
                 },
-                phone: 'requried',
+                phone: 'required',
                 email: {
-                    requried: true,
+                    required: true,
                     email: true
                 }
             },
@@ -72,6 +72,9 @@ $(document).ready(function(){
 
     $('form').submit(function(e) {
         e.preventDefault();
+        if (!$(this).valid()) {
+            return;
+        }
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
@@ -80,14 +83,11 @@ $(document).ready(function(){
             $(this).find("input").val("");
             $('#consultation, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
-
             $('form').trigger('reset');
         });
         return false;
     });
 });
 
-// if (!$(this).valid()) {
-//     return;
-// }
+
   
